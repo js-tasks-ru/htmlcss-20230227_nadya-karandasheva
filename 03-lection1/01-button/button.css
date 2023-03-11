@@ -15,6 +15,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 .button__primary {
     padding: 15px 66px;
