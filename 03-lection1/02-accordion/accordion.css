@@ -1,10 +1,14 @@
 /* Стилизация аккордеона */
 .accordion__container {
     width: 730px;
-    padding: 23px;
+    padding: 25px;
     margin-bottom: 8px;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .accordion__container:last-child {
@@ -12,11 +16,10 @@
 }
 
 .accordion__summary {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;  
 }
 
 .accordion__summary::-webkit-details-marker {
@@ -24,9 +27,5 @@
 }
 
 .accordion__content {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
-    line-height: 24px;
 }
