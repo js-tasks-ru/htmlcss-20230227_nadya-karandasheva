@@ -3,6 +3,7 @@
 @import '../../components/header/header.css';
 @import '../../components/footer/footer.css';
 @import '../../components/page/page.css';
+@import '../../components/cards/cards.css';
 
 :root {
     --white: #ffffff;
@@ -11,6 +12,7 @@
     --purple: #7048E8;
     --blue: #374FC7;
     --red: #F03D3E;
+    --grey-0: #F9FAFC;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
@@ -25,12 +27,10 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
-}
-
-main {
-    height: 1036px;
 }
