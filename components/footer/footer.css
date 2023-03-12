@@ -1,9 +1,11 @@
 .footer {
     height: 384px;
     width: 100%;
+    align-self: flex-end;
 }
 
 .footer__container {
+    height: 100%;
     width: 640px;
     margin: 0 auto;
     padding-top: 72px;
