@@ -1,11 +1,3 @@
-.button__container {
-    width: 35%;
-    margin: 0 auto;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
 /* Стилизация кнопки */
 .button {
     border-radius: 8px;
@@ -17,19 +9,19 @@
     line-height: 19px;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
-.button__primary {
+.button_primary {
     padding: 15px 66px;
     color: var(--white);
     background-color: var(--primary);
 }
 
-.button__secondary {
+.button_secondary {
     padding: 15px 56px;
     color: var(--white);
     background-color: var(--secondary);
 }
 
-.button__alternate {
+.button_alternate {
     padding: 15px 61px;
     color: var(--grey-4);
     background-color: var(--alternate);
@@ -42,15 +34,15 @@
     cursor: pointer;
 }
 
-.button__primary:hover {
+.button_primary:hover {
     background-color: var(--dark-blue);
 }
 
-.button__secondary:hover {
+.button_secondary:hover {
     background-color: var(--dark-purple);
 }
 
-.button__alternate:hover {
+.button_alternate:hover {
     border: 1px solid var(--black);
 }
 
@@ -60,5 +52,4 @@
 .button[disabled] {
     opacity: 0.5;
     pointer-events: none;
-    cursor: default;
 }
