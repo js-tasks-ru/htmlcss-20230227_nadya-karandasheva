@@ -1,5 +1,4 @@
-.skeleton__container {
-    width: 579px;
+.skeleton {
     padding: 32px 40px 34px 24px;
     box-sizing: border-box;
     border: 1px solid var(--grey-3);
@@ -24,6 +23,7 @@
 }
 
 .skeleton__inf {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,10 +42,10 @@
     margin-bottom: 0px;
 }
 
-.short {
-    width: 172px;
+.skeleton__content_short {
+    width: 60%;
 }
 
-.medium {
-    width: 257px;
+.skeleton__content_medium {
+    width: 80%;
 }
