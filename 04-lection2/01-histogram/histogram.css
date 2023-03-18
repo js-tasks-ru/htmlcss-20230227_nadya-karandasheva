@@ -1,13 +1,10 @@
-.histogram__container {
-    /* height: 185px; */
-    width: 354px;
+.histogram {
     border: 1px solid var(--grey-3);
     border-radius: 8px;
-    padding: 16px 24px;
-    margin: 15px auto;
+    padding: 16px 24px 24px 24px;
 }
 
-.histogram__header {
+.histogram__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,141 +15,147 @@
     line-height: 24px;
 }
 
-.count__total-orders {
+.histogram__link {
+    text-decoration: none;
+}
+
+.histogram__subtitle {
     margin: 6px 0px;
     font-size: 20px;
     line-height: 26px;
 }
 
-.histogram {
+.histogram__chart {
     height: 90px;
     width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    gap: 1px;
 }
 
 .histogram__item {
-    min-width: 9px;
+    flex-basis: 9px;
+    flex-grow: 1;
     background: var(--blue);
 }
 
-.item_1 {
+.histogram__item_1 {
     height: 50% ;
 }
 
-.item_2 {
+.histogram__item_2 {
     height: 25%;
 }
 
-.item_3 {
+.histogram__item_3 {
     height: 22%;
 }
 
-.item_4 {
+.histogram__item_4 {
     height: 39%;
 }
 
-.item_5 {
+.histogram__item_5 {
     height: 22% ;
 }
 
-.item_6 {
+.histogram__item_6 {
     height: 30%;
 }
 
-.item_7 {
+.histogram__item_7 {
     height: 39%;
 }
 
-.item_8 {
+.histogram__item_8 {
     height: 50%;
 }
 
-.item_9 {
+.histogram__item_9 {
     height: 11%;
 }
 
-.item_10 {
+.histogram__item_10 {
     height: 22%;
 }
 
-.item_11 {
+.histogram__item_11 {
     height: 30% ;
 }
 
-.item_12 {
+.histogram__item_12 {
     height: 35%;
 }
 
-.item_13 {
+.histogram__item_13 {
     height: 11%;
 }
 
-.item_14 {
+.histogram__item_14 {
     height: 50%;
 }
 
-.item_15 {
+.histogram__item_15 {
     height: 11% ;
 }
 
-.item_16 {
+.histogram__item_16 {
     height: 39%;
 }
 
-.item_17 {
+.histogram__item_17 {
     height: 30%;
 }
 
-.item_18 {
+.histogram__item_18 {
     height: 22%;
 }
 
-.item_19 {
+.histogram__item_19 {
     height: 35%;
 }
 
-.item_20 {
+.histogram__item_20 {
     height: 30%;
 }
 
-.item_21 {
+.histogram__item_21 {
     height: 11% ;
 }
 
-.item_22 {
+.histogram__item_22 {
     height: 39%;
 }
 
-.item_23 {
+.histogram__item_23 {
     height: 35%;
 }
 
-.item_24 {
+.histogram__item_24 {
     height: 45%;
 }
 
-.item_25 {
+.histogram__item_25 {
     height: 30% ;
 }
 
-.item_26 {
+.histogram__item_26 {
     height: 11%;
 }
 
-.item_27 {
+.histogram__item_27 {
     height: 30%;
 }
 
-.item_28 {
+.histogram__item_28 {
     height: 11%;
 }
 
-.item_29 {
+.histogram__item_29 {
     height: 35%;
 }
 
-.item_30 {
+.histogram__item_30 {
     height: 17%;
 }
