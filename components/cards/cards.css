@@ -1,8 +1,10 @@
-.cards__container {
+.container {
+    padding: 68px 165px 204px 165px;
+}
+.cards {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 68px 165px 204px 165px;
 }
 
 .card__item {
