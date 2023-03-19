@@ -23,14 +23,13 @@
     margin: 6px 0px;
     font-size: 20px;
     line-height: 26px;
+    margin-bottom: 39px;
 }
 
 .histogram__chart {
-    height: 90px;
-    width: 100%;
+    height: 50px;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
     gap: 1px;
 }
 
@@ -38,6 +37,18 @@
     flex-basis: 9px;
     flex-grow: 1;
     background: var(--blue);
+}
+
+.histogram__item_small {
+    height: 25%;
+} 
+
+.histogram__item_medium {
+    height: 50%;
+} 
+
+.histogram__item_large {
+    height: 100%;
 }
 
 .histogram__item_1 {
