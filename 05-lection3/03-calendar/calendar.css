@@ -1,7 +1,7 @@
 .calendar {
     border: 1px solid var(--grey-4);
     border-radius: 8px;
-    padding: 28px 36px;
+    padding: 28px 26px 32px;
     width: 100%;
     max-width: 300px;
 }
@@ -29,18 +29,29 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows:repeat(7, 1fr) ;
-    justify-items:center;
-    align-items:center;
 }
 
 .calendar__item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: var(--grey-5);
-    
 }
 
 .calendar__item_day {
     color: var(--light-grey);
+}
+
+.calendar__item_boundares {
+    background: var(--dark-blue);
+    color: var(--white);
+}
+
+.calendar__item_between {
+    background: rgba(160, 177, 245, 0.2);
 }
