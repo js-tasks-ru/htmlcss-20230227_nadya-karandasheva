@@ -1,5 +1,6 @@
 /* Стилизация кнопки */
 .button {
+    padding: 15px 60px;
     border-radius: 8px;
     border: 1px solid var(--grey-3);
     font-family: 'Roboto';
@@ -10,19 +11,16 @@
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 .button_primary {
-    padding: 15px 66px;
     color: var(--white);
     background-color: var(--primary);
 }
 
 .button_secondary {
-    padding: 15px 56px;
     color: var(--white);
     background-color: var(--secondary);
 }
 
 .button_alternate {
-    padding: 15px 61px;
     color: var(--grey-4);
     background-color: var(--alternate);
 }
