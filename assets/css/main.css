@@ -32,6 +32,8 @@
 
 html, body {
     height: 100%;
+    font-family: 'Inter';
+    font-style: normal;
 }
 
 main {
