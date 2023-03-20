@@ -15,6 +15,7 @@
 }
 
 .histogram__link {
+    color: var(--blue-1);
     text-decoration: none;
 }
 
