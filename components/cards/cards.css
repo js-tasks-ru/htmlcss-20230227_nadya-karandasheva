@@ -1,6 +1,3 @@
-.container {
-    padding: 68px 165px 204px 165px;
-}
 .cards {
     display: flex;
     flex-wrap: wrap;
