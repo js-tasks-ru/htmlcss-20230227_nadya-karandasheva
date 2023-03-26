@@ -1,0 +1,51 @@
+.histogram {
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 16px 24px 24px 24px;
+}
+
+.histogram__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.histogram__link {
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+.histogram__subtitle {
+    margin: 6px 0px 39px;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.histogram__chart {
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    gap: 1px;
+}
+
+.histogram__item {
+    flex-basis: 9px;
+    flex-grow: 1;
+    background: var(--blue);
+}
+
+.histogram__item_small {
+    height: 25%;
+} 
+
+.histogram__item_medium {
+    height: 50%;
+} 
+
+.histogram__item_large {
+    height: 100%;
+}
