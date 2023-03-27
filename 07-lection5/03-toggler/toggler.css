@@ -44,7 +44,7 @@
 }
 
 .toggler__title::after {
-    content: "Default";
+    content: "Off";
 }
 
 /*стили toggler в состоянии checked*/
@@ -60,7 +60,7 @@
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__title::after {
-    content: "Checked";
+    content: "On";
 }
 
 /*стили toggler в состоянии disabled*/
