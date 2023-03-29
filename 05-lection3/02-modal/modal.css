@@ -7,6 +7,13 @@
     display: none;
 }
 
+#modal-close {
+    cursor: pointer;
+    position: absolute;
+    right: -30px;
+    top: -20px;
+}
+
 .modal__content {
     width: 428px;
     height: 294px;
@@ -19,8 +26,7 @@
 }
 
 .modal__title {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
     margin-bottom: 14px;
     font-style: normal;
     font-weight: 600;
