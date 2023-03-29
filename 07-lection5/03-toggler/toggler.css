@@ -1,0 +1,81 @@
+.toggler {
+    display: inline-block;
+    position: relative;
+}
+
+.toggler__input {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+
+.toggler__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.toggler__control {
+    width: 52px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #DDE2E5;
+    border-radius: 16px;
+}
+
+.toggler__title {
+    min-width: 67px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057;
+    user-select: none;
+}
+
+.toggler__icon {
+    margin: 2px;
+    border-radius: 16px;
+}
+
+.toggler__title::after {
+    content: "Off";
+}
+
+/*стили toggler в состоянии checked*/
+
+.toggler__input:checked ~ .toggler__state .toggler__control {
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
+    justify-content: end;
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__icon .icon_state {
+    fill: var(--white);
+}
+
+.toggler__input:checked ~ .toggler__state .toggler__title::after {
+    content: "On";
+}
+
+/*стили toggler в состоянии disabled*/
+
+.toggler__input:disabled ~ .toggler__state .toggler__control {
+    background-color: var(--grey-2);
+    border-color: var(--grey-2);
+    pointer-events: none;
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__icon .icon_state {
+    fill: var(--grey-3);
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__title::after {
+    content: "Disabled";
+    color: var(--grey-2);
+}
