@@ -7,7 +7,7 @@
     display: none;
 }
 
-.modal-close {
+.modal__close {
     cursor: pointer;
     position: absolute;
     right: -30px;
