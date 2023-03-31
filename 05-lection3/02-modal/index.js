@@ -9,11 +9,13 @@
 
     modalOpen.addEventListener('click', () => {
         modal.style.display = 'block';
+        modalOpen.style.display = 'none';
         document.body.overflow = 'hidden';
     });
 
     close.addEventListener('click', () => {
         modal.style.display = 'none';
+        modalOpen.style.display = 'block';
         document.body.overflow = 'initial';
     });
 })();
