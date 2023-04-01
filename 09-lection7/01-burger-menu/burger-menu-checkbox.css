@@ -1,0 +1,41 @@
+.burger__menu__checkbox {
+    display: inline-block;
+    position: relative;
+}
+
+.burger__menu__checkbox__input {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+
+.burger__menu__checkbox__state {
+    cursor: pointer;
+}
+
+.burger__menu__checkbox__control {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: inherit;
+}
+
+.burger__mune__icon_open {
+    display: block;
+}
+
+.burger__mune__icon_close {
+    display: none;
+}
+
+/*стили checkbox в состоянии checked*/
+
+.burger__menu__checkbox__input:checked ~ .burger__menu__checkbox__state .burger__mune__icon_close {
+    display: block;
+}
+
+.burger__menu__checkbox__input:checked ~ .burger__menu__checkbox__state .burger__mune__icon_open {
+    display: none;
+}
