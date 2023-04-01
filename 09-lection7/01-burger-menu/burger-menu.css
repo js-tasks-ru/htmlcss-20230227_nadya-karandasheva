@@ -9,12 +9,12 @@
     position: fixed;
     padding: 16px;
     transform: translateX(-100%);
-    transition: transform 1s ease-in-out;
+    transition: transform 400ms ease-in-out;
 }
 
 .burger__menu__wrapper[data-open] {
     transform: translateX(0);
-    transition: transform 1s ease-in-out;
+    transition: transform 400ms ease-in-out;
 }
 
 
