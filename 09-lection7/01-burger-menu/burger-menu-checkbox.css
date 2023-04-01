@@ -1,3 +1,8 @@
+@media (min-width: 768px) {
+    .burger__menu__manager {
+        display: none;
+    }
+}
 .burger__menu__checkbox {
     display: inline-block;
     position: relative;
