@@ -31,6 +31,20 @@
     --primary: var(--blue);
     --secondary: var(--purple);
     --alternate: var(--white);
+
+    /*
+    * стили для светлой темы
+    */
+    --main-bg: var(--light-bg);
+    --font-color: var(--text-primary);
+    --dark-bg: var(--black);
+    --white-bg: var(--white);
+    --light-bg: var(--white);
+    --grey-bg: var(--grey-1);
+    --card-bg: var(--white);
+    --text-primary: var(--black);
+    --active-text-color: var(--text-primary);
+    --input-text-color: var(--grey-4);
 }
 
 * {
