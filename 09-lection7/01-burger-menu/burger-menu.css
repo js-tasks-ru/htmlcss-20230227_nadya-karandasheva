@@ -1,38 +1,24 @@
-/*переопределение стилей для checkbox*/
-
-@media (min-width: 768px) {
-    .burger-menu__checkbox {
-        display: none;
-    }
-}
-
-.checkbox__control {
+/*переопределение стилей для button*/
+.button {
     width: 24px;
     height: 24px;
+    display: inline-block;
+    position: relative;
     border: none;
     background: inherit;
 }
 
-.checkbox__icon_open {
+@media (min-width: 768px) {
+    .button {
+        display: none;
+    }
+}
+
+.button__icon_open {
     display: block;
 }
 
-.checkbox__icon_close {
-    display: none;
-}
-
-/*стили checkbox в состоянии checked*/
-
-.checkbox__input:checked ~ .checkbox__state .checkbox__control {
-    background-color: inherit;
-    border: none;
-}
-
-.checkbox__input:checked ~ .checkbox__state .checkbox__icon_close {
-    display: block;
-}
-
-.checkbox__input:checked ~ .checkbox__state .checkbox__icon_open {
+.button__icon_close {
     display: none;
 }
 
@@ -44,19 +30,26 @@
     }
 }
 
-.burger-menu__wrapper {
+.burger-menu {
     width: 100vw;
+    height: 100vh;
     position: fixed;
     padding: 16px;
     transform: translateX(-100%);
     transition: transform 400ms ease-in-out;
 }
 
-.burger-menu__wrapper[data-open] {
+.burger-menu[data-open] {
     transform: translateX(0);
     transition: transform 400ms ease-in-out;
 }
 
+.burger-menu__devider {
+    width: 100%;
+    height: 0px;
+	border: none;
+	border-top: 1px solid var(--grey-2);
+}
 
 .burger-menu__section {
     display: flex;
@@ -65,7 +58,7 @@
     padding: 24px 0px;
 }
 
-.burger-menu__section__title {
+.burger-menu__title {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -73,7 +66,7 @@
     color: var(--grey-3);
 }
 
-.burger-menu__section__item {
+.burger-menu__item {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -81,22 +74,7 @@
     color: var(--black);
 }
 
-.burger-menu__section__switch__mode {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.burger-menu__section__switch__mode__title {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--grey-4);
-} 
-
-.burger-menu__section__home {
+.burger-menu__home-link {
     padding: 72px 0px;
 }
 
