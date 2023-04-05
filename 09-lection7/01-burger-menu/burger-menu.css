@@ -1,0 +1,83 @@
+/*переопределение стилей для button*/
+.button {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    border: none;
+    background: inherit;
+}
+
+@media (min-width: 768px) {
+    .button {
+        display: none;
+    }
+}
+
+.button__icon_open {
+    display: block;
+}
+
+.button__icon_close {
+    display: none;
+}
+
+/*стили для меню*/
+
+@media (min-width: 768px) {
+    .burger-menu {
+        display: none;
+    }
+}
+
+.burger-menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding: 16px;
+    transform: translateX(-100%);
+    transition: transform 400ms ease-in-out;
+}
+
+.burger-menu[data-open] {
+    transform: translateX(0);
+    transition: transform 400ms ease-in-out;
+}
+
+.burger-menu__devider {
+    width: 100%;
+    height: 0px;
+	border: none;
+	border-top: 1px solid var(--grey-2);
+}
+
+.burger-menu__section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0px;
+}
+
+.burger-menu__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-3);
+}
+
+.burger-menu__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+}
+
+.burger-menu__home-link {
+    padding: 72px 0px;
+}
+
+.burger-menu__link {
+    text-decoration: none;
+}

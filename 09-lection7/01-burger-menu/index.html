@@ -3,10 +3,39 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="../../07-lection5/01-checkbox/checkbox.css">
+        <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
+        <link rel="stylesheet" href="./burger-menu-toggler.css">
         <link rel="stylesheet" href="./burger-menu.css">
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
-
+        <button class="button">
+            <svg id="burger-menu-open" class="button__icon_open" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg> 
+            <svg id="burger-menu-close" class="button__icon_close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="16" fill="#DDE2E5"/>
+                <path d="M22 10L10 22" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 10L22 22" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div id="burger-menu" class="burger-menu">
+            <hr class="burger-menu__devider">
+            <section class="burger-menu__section">
+                <h4 class="burger-menu__title">Components</h4>
+                <a href="#" class="burger-menu__link"><span class="burger-menu__item">Modal</span></a>
+                <a href="#" class="burger-menu__link"><span class="burger-menu__item">Tooltip</span></a>
+                <a href="#" class="burger-menu__link"><span class="burger-menu__item">Avatar</span></a>
+                <a href="#" class="burger-menu__link"><span class="burger-menu__item">Calendar</span></a>
+                <a href="#" class="burger-menu__link"><span class="burger-menu__item">Histogram</span></a>
+                <a href="#" class="burger-menu__link"><span class="burger-menu__item">Custom form elements</span></a>
+            </section>
+            <section class="burger-menu__section burger-menu__home-link">
+                <a href="#" class="burger-menu__link"><span class="burger-menu__item">Main page</span></a>
+            </section>
+        </div>
     </body>
 </html>

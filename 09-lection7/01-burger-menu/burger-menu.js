@@ -6,6 +6,8 @@ if (menuOpen) {
     menuOpen.addEventListener('click', function() {
         if (menu) {
             menu.setAttribute('data-open', '');
+            menuOpen.style.display = "none";
+            menuClose.style.display = "block";
         }
     });
 }
@@ -14,6 +16,8 @@ if (menuClose) {
     menuClose.addEventListener('click', function() {
         if (menu) {
             menu.removeAttribute('data-open');
+            menuClose.style.display = "none";
+            menuOpen.style.display = "block";
         }
     });
 }
