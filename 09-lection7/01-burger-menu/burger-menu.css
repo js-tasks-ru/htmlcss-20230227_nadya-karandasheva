@@ -1,7 +1,7 @@
 /*переопределение стилей для checkbox*/
 
 @media (min-width: 768px) {
-    .checkbox {
+    .burger-menu__checkbox {
         display: none;
     }
 }
@@ -39,12 +39,12 @@
 /*стили для меню*/
 
 @media (min-width: 768px) {
-    .burger__menu {
+    .burger-menu {
         display: none;
     }
 }
 
-.burger__menu__wrapper {
+.burger-menu__wrapper {
     width: 100vw;
     position: fixed;
     padding: 16px;
@@ -52,20 +52,20 @@
     transition: transform 400ms ease-in-out;
 }
 
-.burger__menu__wrapper[data-open] {
+.burger-menu__wrapper[data-open] {
     transform: translateX(0);
     transition: transform 400ms ease-in-out;
 }
 
 
-.burger__menu__section {
+.burger-menu__section {
     display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 24px 0px;
 }
 
-.burger__menu__section__title {
+.burger-menu__section__title {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -73,7 +73,7 @@
     color: var(--grey-3);
 }
 
-.burger__menu__section__item {
+.burger-menu__section__item {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -81,14 +81,14 @@
     color: var(--black);
 }
 
-.burger__menu__section__switch__mode {
+.burger-menu__section__switch__mode {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.burger__menu__section__switch__mode__title {
+.burger-menu__section__switch__mode__title {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -96,10 +96,10 @@
     color: var(--grey-4);
 } 
 
-.burger__menu__section__home {
+.burger-menu__section__home {
     padding: 72px 0px;
 }
 
-.burger__menu__link {
+.burger-menu__link {
     text-decoration: none;
 }
