@@ -1,3 +1,43 @@
+/*переопределение стилей для checkbox*/
+
+@media (min-width: 768px) {
+    .checkbox {
+        display: none;
+    }
+}
+
+.checkbox__control {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: inherit;
+}
+
+.checkbox__icon_open {
+    display: block;
+}
+
+.checkbox__icon_close {
+    display: none;
+}
+
+/*стили checkbox в состоянии checked*/
+
+.checkbox__input:checked ~ .checkbox__state .checkbox__control {
+    background-color: inherit;
+    border: none;
+}
+
+.checkbox__input:checked ~ .checkbox__state .checkbox__icon_close {
+    display: block;
+}
+
+.checkbox__input:checked ~ .checkbox__state .checkbox__icon_open {
+    display: none;
+}
+
+/*стили для меню*/
+
 @media (min-width: 768px) {
     .burger__menu {
         display: none;

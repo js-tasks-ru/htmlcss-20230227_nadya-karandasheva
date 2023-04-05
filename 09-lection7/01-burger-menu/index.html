@@ -3,48 +3,35 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <link rel="stylesheet" href="./burger-menu-checkbox.css">
+        <link rel="stylesheet" href="../../07-lection5/01-checkbox/checkbox.css">
         <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
         <link rel="stylesheet" href="./burger-menu-toggler.css">
+        <link rel="stylesheet" href="./burger-menu.css">
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
-        <div class="burger__menu__manager">
-            <label class="burger__menu__checkbox">
-                <input type="checkbox" class="burger__menu__checkbox__input">
-                <div class="burger__menu__checkbox__state">
-                    <div class="burger__menu__checkbox__control">
-                        <svg id="burger-menu-open" class="burger__mune_icon burger__mune__icon_open" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg> 
-                        <svg id="burger-menu-close" class="burger__mune__icon burger__mune__icon_close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="16" fill="#DDE2E5"/>
-                            <path d="M22 10L10 22" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10 10L22 22" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
+        <label class="checkbox">
+            <input type="checkbox" class="checkbox__input">
+            <div class="checkbox__state">
+                <div class="checkbox__control">
+                    <svg id="burger-menu-open" class="checkbox__icon_open" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                    <svg id="burger-menu-close" class="checkbox__icon_close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#DDE2E5"/>
+                        <path d="M22 10L10 22" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 10L22 22" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </div>
-            </label>
-        </div>
+            </div>
+        </label>
         <div class="burger__menu">
             <div id="burger-menu" class="burger__menu__wrapper">
                 <hr>
                 <section class="burger__menu__section burger__menu__section__switch__mode">
                     <span class="burger__menu__section__switch__mode__title">Dark mode</span>
-                    <label class="toggler">
-                        <input type="checkbox" class="toggler__input">
-                        <div class="toggler__state">
-                            <div class="toggler__control">
-                                <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect class="icon_state" width="24" height="24" rx="12" fill="#DDE2E5"/>
-                                </svg>      
-                            </div>
-                            <div class="burger__menu__toggler__title"></div>
-                        </div>
-                    </label>
                 </section>
                 <hr>
                 <section class="burger__menu__section">
